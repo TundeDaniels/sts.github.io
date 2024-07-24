@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/STS.css">
+
+</head>
+
+<body style="min-height: 100vh; background-color: whitesmoke;">
+    <div id="parralax">
+        <img src="images/carrepair.jpg" id="repair" alt="">
+        <img src="images/car-diagnostics.jpg" id="disgnostics" alt="">
+    </div>
+
+    <!-- <section class="para"></section> -->
+
+    <script>
+
+        let repair = document.getElementById("repair")
+        let diagnostics = document.getElementById("diagnostics")
+        let parralax = document.getElementById("parralax")
+
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            repair.style.left = value + "px"
+
+        })
+    </script>
+</body>
+
+</html>
